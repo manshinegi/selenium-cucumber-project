@@ -11,7 +11,6 @@ import resources.Base;
 public class LoginStepDef extends Base {
     LoginPageObj loginPageObj ;
     public  static Logger log = LogManager.getLogger(JoinAccountStepDef.class.getName());
-
     public LoginStepDef() {
      loginPageObj = new LoginPageObj();
     }
