@@ -8,32 +8,32 @@ Feature: user can see dashboard
     And click on login button
     Then user should logged in
 
-#  @SmokeTest
+  #@SmokeTest
   Scenario:user should able to see correct data of its account on dashborad
     When  user is on dashboard
     Then user should be able to see its name and emailId
 
-#  @SmokeTest
+ #@SmokeTest
   Scenario:user should able to see its Earnr account summary
     When user click on navigation button
     Then user should be able to see account summary
 
-#   @SmokeTest
+  #@SmokeTest
   Scenario:user should able to be able to logout
     When user click on logout button
     Then user should be logged out
 
-#  @SmokeTest
+  #@SmokeTest
   Scenario:user should able to be see its profile
     When user click on profile button
     Then user should able to see its profile
 
-#  @SmokeTest
+  #@SmokeTest
   Scenario:user should able to see account detail
     When user click on account button
     Then user should able to see its account detail
 
-#  @SmokeTest
+  #@SmokeTest
   Scenario:user should able to see its Balance and returns of its different platform
     When user click on navigation button
     Then user should be able to its earnr balance and returns

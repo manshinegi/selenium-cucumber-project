@@ -1,6 +1,7 @@
 package pageObjects;
 
 import io.cucumber.java.en.Then;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,6 +41,7 @@ public class JointAccountPageObj extends Base {
     }
 
     public boolean verifyNoindividualPage() {
+
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return true;
     }

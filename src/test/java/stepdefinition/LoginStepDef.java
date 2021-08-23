@@ -2,12 +2,15 @@ package stepdefinition;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import pageObjects.LoginPageObj;
 import resources.Base;
 
 public class LoginStepDef extends Base {
     LoginPageObj loginPageObj ;
+    public  static Logger log = LogManager.getLogger(JoinAccountStepDef.class.getName());
 
     public LoginStepDef() {
      loginPageObj = new LoginPageObj();
@@ -16,6 +19,8 @@ public class LoginStepDef extends Base {
     @When("user clicks on login link")
     public void user_clicks_on_login_link() {
         loginPageObj.clickOnLoginLink();
+        log.debug("user clicks on login");
+        log.error("error message is displayed");
     }
     @Then("login page is populated")
     public void login_page_is_populated() {

@@ -18,8 +18,7 @@ Feature:  User creates a individual account
     And clicks on continue
     Then select account type page is populated.
 
-
-#  @SmokeTest
+  #@SmokeTest
   Scenario: User should be able to create an individual account
     Given User is on select Account type page
     When User select individual account type

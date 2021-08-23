@@ -10,7 +10,7 @@ Feature:  login functionality
     And click on login button
     Then user should logged in
 
-  @SmokeTest
+  #@SmokeTest
     Scenario: User should not be able to login with invalid credentials
       When user enter invalid email id or invalid password
       And click on login button
